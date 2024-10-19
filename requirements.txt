@@ -1,3 +1,4 @@
 Flask
 Gunicorn
 Spotipy
+Flask-Session

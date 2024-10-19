@@ -12,11 +12,12 @@ from spotipy.oauth2 import SpotifyOAuth
 # 6d48c434bd0a448a94dc1b6a6423e72e
 client_id = "b6e42f8dd5b142d892b1eedeb03f141d"
 client_secret = "6d48c434bd0a448a94dc1b6a6423e72e"
-redirect_uri = "http://127.0.0.1:5000/callback"
+redirect_uri = "google.com"
 
 scope = "user-read-recently-played"
 
-def most_played_note():
+def bread():
+    print("Authenticating...")
     sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope, client_id = client_id,client_secret = client_secret,
                                                     redirect_uri=redirect_uri))
 
@@ -25,7 +26,7 @@ def most_played_note():
 
     song_ids = []
     song_names = []
-    note_duration = [0 for i in range(12)]
+    note_duration = [0 for i in range(1)]
     chroma_scale = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
 
     for idx, item in enumerate(results['items']):
