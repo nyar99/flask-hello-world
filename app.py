@@ -7,5 +7,5 @@ def hello_world():
     return 'Hello, World!'
 
 @app.route('/most_played_note')
-def hello_world():
+def most_played_note():
     return f'Most played note: {most_played_note()}'
