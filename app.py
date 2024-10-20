@@ -7,7 +7,7 @@ import uuid
 # CLIENT ID, CLIENT SECRET
 SPOTIPY_CLIENT_ID = "b6e42f8dd5b142d892b1eedeb03f141d"
 SPOTIPY_CLIENT_SECRET = "6d48c434bd0a448a94dc1b6a6423e72e"
-SPOTIPY_REDIRECT_URI = "http://127.0.0.1:8080"
+SPOTIPY_REDIRECT_URI = "https://flask-hello-world-nnuf.onrender.com/"
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.urandom(64)
