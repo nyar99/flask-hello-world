@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+#random
+.flask_session/
+.spotify_caches/
