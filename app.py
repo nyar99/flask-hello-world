@@ -177,7 +177,7 @@ Following lines allow application to be run more conveniently with
 (Also includes directive to leverage pythons threading capacity.)
 '''
 if __name__ == '__main__':
-    app.run(threaded=True, port=int(os.environ.get("PORT", 10000)))
+    app.run(threaded=True, port=int(os.environ.get("PORT", 8080)), host="0.0.0.0")
 
 """
 Prerequisites
